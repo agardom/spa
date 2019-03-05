@@ -15,6 +15,7 @@ abstract class BaseRepo {
   }
 
   public function search(array $data = array(), $paginate = false) {
+
     $data = array_only($data, $this->filters);
     $data = array_filter($data, 'strlen');
 
@@ -23,7 +24,7 @@ abstract class BaseRepo {
     foreach ($data as $field => $value) {
       $filterMethod = 'filterBy' . studly_case($field);
 
-      if (method_exits(get_called_class(), $filterMethod)) {
+      if (method_exists(get_called_class(), $filterMethod)) {
         $this->$filterMethod($q, $value);
       }
       else {

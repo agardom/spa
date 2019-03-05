@@ -38,7 +38,7 @@ class ServicesTableSeeder extends Seeder
         for ($i = 1; $i < 29; $i++) {
           ServiceTimeTable::create([
             'serviceId' => $service->id,
-            'date' => '2018-02-' . $i,
+            'date' => '2019-03-' . $i,
             'start' => '08:00',
             'end' => '18:00'
           ]);
@@ -62,7 +62,7 @@ class ServicesTableSeeder extends Seeder
         for ($i = 1; $i < 29; $i++) {
           ServiceTimeTable::create([
             'serviceId' => $service->id,
-            'date' => '2018-02-' . $i,
+            'date' => '2019-03-' . $i,
             'start' => '08:00',
             'end' => '18:00'
           ]);
@@ -86,7 +86,7 @@ class ServicesTableSeeder extends Seeder
         for ($i = 1; $i < 29; $i++) {
           ServiceTimeTable::create([
             'serviceId' => $service->id,
-            'date' => '2018-02-' . $i,
+            'date' => '2019-03-' . $i,
             'start' => '10:00',
             'end' => '17:00'
           ]);
@@ -110,7 +110,7 @@ class ServicesTableSeeder extends Seeder
         for ($i = 1; $i < 29; $i++) {
           ServiceTimeTable::create([
             'serviceId' => $service->id,
-            'date' => '2018-02-' . $i,
+            'date' => '2019-03-' . $i,
             'start' => '10:00',
             'end' => '17:00'
           ]);

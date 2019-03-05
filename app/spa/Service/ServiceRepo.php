@@ -6,6 +6,8 @@ use spa\Base\BaseRepo;
 
 class ServiceRepo extends BaseRepo {
 
+  public $filters = ['id'];
+
   public function getModel() {
     return new Service;
   }

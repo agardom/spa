@@ -1,0 +1,29 @@
+.right {
+  text-align: right;
+  padding: 0;
+}
+
+.grid {
+  margin-top: 15px;
+}
+
+.grid div {
+  vertical-align: middle;
+  align-items: center;
+}
+
+.grid i {
+  cursor: pointer;
+}
+
+.header {
+  background-color: #AAA;
+}
+
+.oddRow {
+  background-color: #DDD;
+}
+
+.evenRow {
+  background-color: #FFF;
+}

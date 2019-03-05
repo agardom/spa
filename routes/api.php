@@ -20,5 +20,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('hello', function() { return "hi-" . App::getLocale();})->middleware('localization');
 
+// Booking
+Route::get('bookings', 'BookingController@index');
+Route::get('bookings/{id}', 'BookingController@searchByService');
+Route::get('bookings/{id}/{startDate}/{endDate}', 'BookingController@searchByDate');
+
+Route::post('booking', 'BookingController@create');
+
+// Services
 Route::get('services', 'ServiceController@index')->middleware('localization');
 Route::get('services/{id}', 'ServiceController@show');
+
+// Timetable
+Route::get('serviceTimetable/{id}/{startDate}/{endDate}', 'ServiceController@timetable');
+Route::get('serviceTimetableByHour/{id}/{startDate}/{endDate}', 'ServiceController@timetableByHour');
+Route::get('serviceAvailableTimetableByHour/{id}/{startDate}/{endDate}', 'ServiceController@availableTimetableByHour');

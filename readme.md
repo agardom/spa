@@ -67,3 +67,24 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Commands
+Create Project        composer.phar create-project --prefer-dist laravel/laravel [ProjectName]
+API New Controller    php artisan make:controller [Name]Controller
+API New Model         php artisan make:model [ModelName] -m
+API New Repository    php artisan make:repository [Name]Repository
+WEB Middleware        php artisan make:middleware [MiddlewareName]
+DB New Seeder         php artisan make:seeder [TableName]Seeder
+
+DB Create             php artisan migrate
+DB Reset              php artisan migrate:reset
+DB Fill               php artisan db:seed
+Web Serve             php artisan serve
+Web Reset             php artisan reset
+Web Restart           php artisan restart
+Run Tests             ./vendor/bin/phpunit
+GIT Commit            git commit -m "[message]"
+GIT Push              git push -u origin master         
+
+See Processes Listening On a port   lsof -nP i4TCP:[Port] | grep LISTEN
+Kill Process                        kill [ProcessID]
