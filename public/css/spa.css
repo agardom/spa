@@ -1,3 +1,11 @@
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
 .right {
   text-align: right;
   padding: 0;
@@ -26,4 +34,17 @@
 
 .evenRow {
   background-color: #FFF;
+}
+
+.booked {
+  background-color: #FF8F8F
+}
+
+.available {
+  background-color: #C6E6C5
+}
+
+#btnBuscar {
+  line-height: 30px;
+  padding-left: 0px;
 }
